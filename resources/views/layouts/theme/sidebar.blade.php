@@ -2,6 +2,7 @@
 
     <nav id="compactSidebar">
         <ul class="menu-categories">
+            <!-- @can('Category_Index')
             <li class="active">
                 <a href="{{url('categories')}}" class="menu-toggle" data-active="true">
                     <div class="base-menu">
@@ -12,14 +13,15 @@
                     </div>
                 </a>
             </li>
+            @endcan -->
 
             <li class="">
                 <a href="{{ url('products') }}" class="menu-toggle" data-active="false">
                     <div class="base-menu">
                         <div class="base-icons">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
                         </div>
-                        <span>PRODUCTOS</span>
+                        <span>STOCK</span>
                     </div>
                 </a>
             </li>
@@ -30,7 +32,18 @@
                         <div class="base-icons">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
                         </div>
-                        <span>VENTAS</span>
+                        <span>PEDIDOS</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="{{ url('edit') }}" class="menu-toggle" data-active="false">
+                    <div class="base-menu">
+                        <div class="base-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                        </div>
+                        <span>EDITAR</span>
                     </div>
                 </a>
             </li>
@@ -76,7 +89,7 @@
                     </div>
                 </a>
             </li>
-            <li class="">
+            <!-- <li class="">
                 <a href="{{ url('coins') }}" class="menu-toggle" data-active="false">
                     <div class="base-menu">
                         <div class="base-icons">
@@ -85,8 +98,8 @@
                         <span>MONEDAS</span>
                     </div>
                 </a>
-            </li>
-            <li class="">
+            </li> -->
+            <!-- <li class="">
                 <a href="{{url('cashout')}}" class="menu-toggle" data-active="false">
                     <div class="base-menu">
                         <div class="base-icons">
@@ -95,8 +108,8 @@
                         <span>ARQUEOS</span>
                     </div>
                 </a>
-            </li>
-            <li class="">
+            </li> -->
+            <!-- <li class="">
                 <a href="{{url('reports')}}" class="menu-toggle" data-active="false">
                     <div class="base-menu">
                         <div class="base-icons">
@@ -105,7 +118,7 @@
                         <span>REPORTES</span>
                     </div>
                 </a>
-            </li>
+            </li> -->
         </ul>
 
 

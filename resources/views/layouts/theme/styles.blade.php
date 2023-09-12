@@ -25,6 +25,8 @@
 
 <link href="{{ asset('plugins/apex/apexcharts.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('assets/css/dashboard/dash_2.css') }}" rel="stylesheet" type="text/css" class="dashboard-sales" />
+<!-- select2 -->
+<link href="{{ asset('assets/css/select2.min.css') }}" rel="stylesheet" type="text/css">
 <style>
     aside {
         display:none|important;
@@ -51,10 +53,11 @@
             display:block;
         }
     }
-
+    /*sidebar background*/
     .sidebar-theme #compactSidebar {
         background: #191e3a!important;
     }
+    /*sidebar collapse background*/
     .header-container .sidebar-Collapse{
         color: #3B3F5C!important;
     }

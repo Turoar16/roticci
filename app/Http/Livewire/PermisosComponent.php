@@ -46,7 +46,7 @@ class PermisosComponent extends Component
         $rules = ['permissionName' => 'required|min:2|unique:permissions,name'];
 
         $messages = [
-            'permissionName.required' => 'Elnombre del permiso es requerido',
+            'permissionName.required' => 'El nombre del permiso es requerido',
             'permissionName.min'      => 'El nombre del permiso debe tener al menos 2 carateres',
             'permissionName.unique'   => 'El permiso ya existe'
         ];
@@ -63,7 +63,6 @@ class PermisosComponent extends Component
 
     public function Edit(Permission $permiso)
     {
-        //$permiso = Permission::find($id);
         $this->selected_id = $permiso->id;
         $this->permissionName = $permiso->name;
 
@@ -75,7 +74,7 @@ class PermisosComponent extends Component
         $rules = ['permissionName' => "required|min:2|unique:permissions,name, {$this->selected_id}"];
 
         $messages = [
-            'permissionName.required' => 'Elnombre del permiso es requerido',
+            'permissionName.required' => 'El nombre del permiso es requerido',
             'permissionName.min'      => 'El nombre debe tener al menos 3 carateres',
             'permissionName.unique'   => 'El permiso ya existe'
         ];

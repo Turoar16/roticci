@@ -14,6 +14,11 @@
                                     </div>
                                     <div>
                                         <h4 class="mt-3">Articulos: {{$itemsQuantity}}</h4>
+                                        <hr>
+                                        <h4 class="mt-3">I.V.A. 10%: {{number_format(($total/11),2)}}</h4>
+                                        <hr>
+                                        <h4 class="mt-3">Dólar: U${{number_format($total,2)}}</h4>
+                                        <h4 class="mt-3">Real: R${{number_format(($total* $cotizareal),2)}}</h4>
                                     </div>
 
                                 </div>

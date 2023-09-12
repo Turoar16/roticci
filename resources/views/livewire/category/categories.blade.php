@@ -7,13 +7,17 @@
                 </h4>
                 <ul class="tab tab-pills">
                     <li>
+                        @can('Category_Create')
                         <a href="javascript:void(0)" class="tabmenu bg-dark btn btn-sm" data-toggle="modal" data-target="#theModal">
                             Agregar
                         </a>
+                        @endcan
                     </li>
                 </ul>
             </div>
+            @can('Category_Search')
             @include('common.searchbox')
+            @endcan
 
             <div class="widget-content">
                 <div class="table-responsive">
@@ -38,17 +42,20 @@
                                     </span>
                             </td>
                             <td class="text-center">
+                                @can('Category_Update')
                                 <a href="javascript:void(0)"
                                    wire:click="Edit({{$category->id}})"
                                    class="btn btn-dark mtmobile" title="Edit">
                                     <i class="fas fa-edit"></i>
                                 </a>
-
+                                @endcan
+                                @can('Category_Destroy')
                                 <a href="javascript:void(0)"
                                    onclick="Confirm('{{$category->id}}', '{{$category->products->count()}}')"
                                    class="btn btn-dark" title="Delete">
                                     <i class="fas fa-trash"></i>
                                 </a>
+                                @endcan
                             </td>
                         </tr>
                         @endforeach

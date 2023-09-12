@@ -11,8 +11,16 @@
         window.livewire.on('no-stock', Msg =>{
             noty(Msg, 2)
         })
+        
+        window.livewire.on('no-stock', Msg =>{
+            noty(Msg, 2)
+        })
 
         window.livewire.on('sale-error', Msg =>{
+            noty(Msg)
+        })
+
+        window.livewire.on('sale-ok', Msg =>{
             noty(Msg)
         })
 

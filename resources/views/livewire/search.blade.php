@@ -4,8 +4,8 @@
         <form class="form-inline search-full form-inline search" role="search">
             <div class="search-bar">
                 <input id="code" type="text"
-                       wire:keydown.enter.prevent="$emit('scan-code', $('#code').val())"
-                       class="form-control search-form-control  ml-lg-auto" placeholder="Buscar...">
+                    wire:keydown.enter.prevent="$emit('scan-code', $('#code').val())"
+                    class="form-control search-form-control  ml-lg-auto" placeholder="Buscar...">
             </div>
         </form>
     </li>

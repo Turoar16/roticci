@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
+use IvanoMatteo\LaravelDeviceTracking\Traits\UseDevices;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable, HasRoles;
+    use HasFactory, Notifiable, HasRoles, UseDevices;
 
     /**
      * The attributes that are mass assignable.
@@ -20,12 +21,17 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'username',
         'password',
         'profile',
         'phone',
         'status',
         'image'
     ];
+
+    public function getDateFormat(){
+        return 'Y-d-m H:m:s';
+    }
 
     /**
      * The attributes that should be hidden for arrays.

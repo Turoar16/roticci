@@ -15,6 +15,11 @@ class AsignarComponent extends Component
     public $componentName, $role, $permisosSelected = [], $old_permissions = [];
     private $pagination = 10;
 
+    public function paginationView()
+    {
+        return 'vendor.livewire.bootstrap';
+    }
+
     public function mount()
     {
         $this->role = 'Elegir';

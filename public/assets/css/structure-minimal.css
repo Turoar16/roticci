@@ -1105,7 +1105,7 @@ code {
   .sidebar-closed #sidebar .theme-brand li.theme-text a {
     display: none; } }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar .navbar-item.search-ul {
     margin: 0 16px 0 auto; }
   .navbar .navbar-item .nav-item .form-inline.search {
